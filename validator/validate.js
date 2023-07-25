@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 
 /** validate Question */
 module.exports.ValidateQuestion = async function (req, res, next) {
-  console.log(req.body);
   let errors = [];
   if (
     !req.body.title ||
@@ -30,7 +29,6 @@ module.exports.ValidateQuestion = async function (req, res, next) {
 
 /** validate option */
 module.exports.validateOption = async function (req, res, next) {
-  console.log(req.params.id);
   let errors = [];
   if (!req.body.text || req.body.text == undefined || !req.body.text.trim()) {
     errors.push({

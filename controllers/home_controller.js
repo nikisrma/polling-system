@@ -2,6 +2,22 @@ const QuestionSchema = require("../models/question.model");
 const OptionSchema = require("../models/options.model");
 const mongoose = require("mongoose");
 
+/** get Question list*/
+module.exports.getQuestionList = async function (req, res) {
+  let questionList = await QuestionSchema.find({});
+  if (questionList.length==0) {
+    return res.status(400).send({
+      message: "No question Found",
+      status: 0,
+    });
+  }
+  return res.status(201).send({
+    message: "Questions found ",
+    status: 1,
+    data:questionList
+  });
+};
+
 /** create Question */
 module.exports.createQuestion = async function (req, res) {
   let question = await QuestionSchema.create({ ...req.body });
@@ -57,6 +73,20 @@ module.exports.createOption = async function (req, res) {
       status: 0,
     });
   }
+};
+module.exports.getOptionList = async function (req, res) {
+  let optionsList = await OptionSchema.find({});
+  if (optionsList.length==0) {
+    return res.status(400).send({
+      message: "No question Found",
+      status: 0,
+    });
+  }
+  return res.status(201).send({
+    message: "Options found ",
+    status: 1,
+    data:optionsList
+  });
 };
 
 /** Delete question */
