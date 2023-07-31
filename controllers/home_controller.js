@@ -46,7 +46,7 @@ module.exports.createOption = async function (req, res) {
     let obj = {
       text: req.body.text,
       question: question._id,
-      link_to_vote: `http://localhost:8000/options/${objectId}/add_vote`,
+      link_to_vote: `https://polling-system-wb41.onrender.com/options/${objectId}/add_vote`,
       _id: objectId,
     };
     let result = await OptionSchema.create(obj);

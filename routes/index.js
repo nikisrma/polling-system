@@ -3,6 +3,9 @@ const router = express.Router();
 const homeController = require('../controllers/home_controller');
 const validator = require('../validator/validate');
 
+router.get('/',(req,res)=>{
+    res.render('index')
+})
 router.post('/questions/create',validator.ValidateQuestion, homeController.createQuestion);
 router.post('/questions/:id/options/create', validator.validateOption,homeController.createOption);
 router.get('/questions/list', homeController.getQuestionList);

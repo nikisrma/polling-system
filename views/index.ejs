@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polling System</title>  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Helvetica', sans-serif;
+      background-image: url('https://source.unsplash.com/1920x1080/?nature,landscape');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; 
+      margin: 0; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+
+    .cover-container {
+      max-width: 42rem;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .cover-heading {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .lead {
+      font-size: 1.5rem;
+      color: #666666;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 1rem;
+      color: #999999;
+    }
+
+    footer a {
+      color: #999999;
+    }
+
+    footer a:hover {
+      color: #555555;
+    }
+
+    @media (max-width: 576px) {
+      .cover-heading {
+        font-size: 3rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cover-container">
+    <header class="mb-auto">
+      <h1 class="cover-heading">Welcome to the Polling System</h1>
+    </header>
+
+    <main class="px-3">
+      <p class="lead">Ready to explore? Click the button below!</p>
+      <a href="https://www.postman.com/nikita263/workspace/polling-system/request/15396683-745c5bb3-6914-4acf-b5ee-c92c6ae5c97b" class="btn btn-primary btn-lg">Go To The Postman </a>
+    </main>
+
+   
+  </div>
+</body>
+
+</html>
