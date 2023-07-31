@@ -5,19 +5,19 @@
 To get the API up and running on your local machine, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/polling-system-api.git
+   git clone https://github.com/nikisrma/polling-system.git
 
-2. Install dependencies:
+3. Install dependencies:
     cd polling-system
     npm install
 
-3. Set up MongoDB:
+4. Set up MongoDB:
     Update the MongoDB connection string in `db.config.js` to connect to your database.
 
-4. Start the server:
+5. Start the server:
     The server will run on http://localhost:8000 by default.
    
-5. Routes
+6. Routes
 
     - `GET /` - Render the index page.
     
